@@ -1,0 +1,167 @@
+{
+  "all-courses": [
+    {
+      "id": 1,
+      "title": "Introduction to Computer Science",
+      "description": "An introductory course on computer science concepts, algorithms, and programming.",
+      "instructor": "Dr. John Doe",
+      "duration": "12 weeks",
+      "level": "Beginner"
+    },
+    {
+      "id": 2,
+      "title": "Data Structures and Algorithms",
+      "description": "A comprehensive course on data structures, algorithms, and problem-solving techniques.",
+      "instructor": "Prof. Jane Smith",
+      "duration": "14 weeks",
+      "level": "Intermediate"
+    },
+    {
+      "id": 3,
+      "title": "Calculus I",
+      "description": "Fundamentals of differential and integral calculus with applications in physics and engineering.",
+      "instructor": "Dr. Emily White",
+      "duration": "10 weeks",
+      "level": "Beginner"
+    },
+    {
+      "id": 4,
+      "title": "Physics I: Mechanics",
+      "description": "An introduction to classical mechanics, including Newtonian laws, energy, and motion.",
+      "instructor": "Dr. Michael Brown",
+      "duration": "15 weeks",
+      "level": "Intermediate"
+    },
+    {
+      "id": 5,
+      "title": "Introduction to Artificial Intelligence",
+      "description": "A basic overview of AI concepts, including search algorithms, machine learning, and neural networks.",
+      "instructor": "Dr. Sarah Green",
+      "duration": "12 weeks",
+      "level": "Intermediate"
+    },
+    {
+      "id": 6,
+      "title": "Philosophy of Science",
+      "description": "A course on the philosophical foundations of science, including topics like the scientific method and ethics.",
+      "instructor": "Prof. Peter Black",
+      "duration": "10 weeks",
+      "level": "Beginner"
+    },
+    {
+      "id": 7,
+      "title": "Economics 101",
+      "description": "An introductory course to macroeconomics, microeconomics, and economic systems.",
+      "instructor": "Prof. Alice King",
+      "duration": "12 weeks",
+      "level": "Beginner"
+    },
+    {
+      "id": 8,
+      "title": "Organic Chemistry",
+      "description": "Study of the structure, properties, and reactions of organic compounds and materials.",
+      "instructor": "Dr. David Harris",
+      "duration": "14 weeks",
+      "level": "Intermediate"
+    },
+    {
+      "id": 9,
+      "title": "Linear Algebra",
+      "description": "A comprehensive course on vectors, matrices, and linear transformations.",
+      "instructor": "Prof. Linda Gray",
+      "duration": "10 weeks",
+      "level": "Intermediate"
+    },
+    {
+      "id": 10,
+      "title": "Introduction to Psychology",
+      "description": "A basic introduction to the field of psychology, including human behavior and mental processes.",
+      "instructor": "Dr. Richard Clark",
+      "duration": "12 weeks",
+      "level": "Beginner"
+    },
+    {
+      "id": 11,
+      "title": "Web Development",
+      "description": "Learn the basics of front-end and back-end web development using HTML, CSS, JavaScript, and Python.",
+      "instructor": "Prof. Julia Scott",
+      "duration": "14 weeks",
+      "level": "Beginner"
+    },
+    {
+      "id": 12,
+      "title": "Advanced Programming in C++",
+      "description": "An in-depth course on object-oriented programming, memory management, and advanced C++ techniques.",
+      "instructor": "Dr. William Turner",
+      "duration": "16 weeks",
+      "level": "Advanced"
+    },
+    {
+      "id": 13,
+      "title": "Sociology 101",
+      "description": "An introduction to sociology, covering social structures, institutions, and cultural norms.",
+      "instructor": "Dr. Olivia Mitchell",
+      "duration": "12 weeks",
+      "level": "Beginner"
+    },
+    {
+      "id": 14,
+      "title": "Database Systems",
+      "description": "Learn about relational databases, SQL, and database design principles.",
+      "instructor": "Prof. Benjamin Thomas",
+      "duration": "14 weeks",
+      "level": "Intermediate"
+    },
+    {
+      "id": 15,
+      "title": "Machine Learning",
+      "description": "Introduction to machine learning techniques, including supervised and unsupervised learning algorithms.",
+      "instructor": "Dr. Rachel Adams",
+      "duration": "16 weeks",
+      "level": "Advanced"
+    },
+    {
+      "id": 16,
+      "title": "Introduction to Linguistics",
+      "description": "A broad overview of linguistics, including phonetics, syntax, semantics, and sociolinguistics.",
+      "instructor": "Prof. Henry Walker",
+      "duration": "12 weeks",
+      "level": "Beginner"
+    },
+    {
+      "id": 17,
+      "title": "Environmental Science",
+      "description": "Study of ecological systems, environmental issues, and sustainability practices.",
+      "instructor": "Dr. Zoe Nelson",
+      "duration": "12 weeks",
+      "level": "Intermediate"
+    },
+    {
+      "id": 18,
+      "title": "Business Management",
+      "description": "Learn the fundamentals of business management, including strategic planning, marketing, and operations.",
+      "instructor": "Prof. Michael Carter",
+      "duration": "14 weeks",
+      "level": "Intermediate"
+    },
+    {
+      "id": 19,
+      "title": "Digital Marketing",
+      "description": "An introduction to digital marketing strategies, including SEO, social media, and online advertising.",
+      "instructor": "Dr. Samantha Collins",
+      "duration": "12 weeks",
+      "level": "Beginner"
+    },
+    {
+      "id": 20,
+      "title": "Introduction to Graphic Design",
+      "description": "A basic course in graphic design, covering design principles, typography, and digital tools.",
+      "instructor": "Prof. Kevin Young",
+      "duration": "10 weeks",
+      "level": "Beginner"
+    }
+  ],
+  "my-courses": [],
+  "users": [],
+  "teachers": []
+}

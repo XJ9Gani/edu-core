@@ -1,13 +1,17 @@
 import React from "react";
-import RegistrationPage from "./pages/RegistrationPage";
-import { BrowserRouter } from "react-router-dom";
+import Header from "./components/Header";
+import { useLocation } from "react-router-dom";
 import AppRouter from "./components/AppRouter";
 
 const App = () => {
+  const location = useLocation();
   return (
-    <BrowserRouter>
+    <>
+      {location.pathname !== "/sing-in" && location.pathname !== "/" && (
+        <Header />
+      )}
       <AppRouter />
-    </BrowserRouter>
+    </>
   );
 };
 

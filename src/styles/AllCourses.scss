@@ -1,0 +1,54 @@
+@mixin textProperty($color, $size) {
+  font-size: $size;
+  color: $color;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.allCourses {
+  min-height: 100vh;
+  background-color: rgb(240, 240, 240);
+  &__container {
+    min-height: 90vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    &--item {
+      background-color: white;
+      list-style: none;
+      width: 302px;
+      height: 426px;
+      margin: auto;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+
+      gap: 10px;
+      .image {
+        background-image: url("https://s3-alpha-sig.figma.com/img/4641/9ab4/dbaca3c0417cc4aaf99bc466a61dc091?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UGM3tCXbu96WAz0OeVfjhaMYRfDwKcwlrQcn~2CVEahX4npaSzZoSuZzd6l7ZF6cCD~ds9T83qybCjvaFFLI~j2Gfxv0R7T7AbfFUP156HlFALyGl~1yEfDAfSUS6InIs-bl5VjZGLUi0mMC40nqhL23tumYuFJMhlfZKuKX2vVsbvTI-WQMfYDOD1T794apgbrMvwx0GZ0Vpl2QwAxHSYxQlvG1Wj9tE7tETfwNAOynq8X2AhNtTXywvTeTZ6wrs6KBXWYfaiSV0bcMKezh5jMHBeFJZKzYSo0jCaqbLKB0V0Q8yta27OeP20fLvwjWvS~Z9Ei6cO30LWbPcoybPg__");
+        height: 50%;
+        background-size: cover;
+      }
+      .title {
+        height: 52px;
+        text-align: center;
+        @include textProperty(rgba(16, 32, 63, 1), 24px);
+      }
+      .description {
+        height: 32px;
+        display: block;
+        margin-top: 1px;
+        @include textProperty(rgba(16, 32, 63, 1), 15px);
+      }
+      .level {
+        margin-top: 40px;
+        @include textProperty(rgba(77, 77, 77, 1), 13px);
+        height: 32px;
+      }
+    }
+  }
+}

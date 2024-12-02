@@ -38,7 +38,7 @@ const RegistrationPage = () => {
       setPassword("");
       setEmail("");
       alert("your registration has been сonfirmed!! ");
-      navigate("/home");
+      navigate("/my-profile");
     }
   };
   return (

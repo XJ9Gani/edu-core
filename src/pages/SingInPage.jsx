@@ -28,7 +28,7 @@ const SingInPage = () => {
       alert("Login successful!");
       setInputEmail("");
       setIputPassword("");
-      navigate("/home");
+      navigate("/my-profile");
     }
   };
   return (
