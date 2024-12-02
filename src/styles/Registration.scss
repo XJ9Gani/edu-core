@@ -1,0 +1,96 @@
+@mixin textProperty($color, $size) {
+  font-size: $size;
+  color: $color;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.registration {
+  display: flex;
+  min-height: 100vh;
+  &__leftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+    border-top-right-radius: 170px;
+    border-bottom-right-radius: 170px;
+    background-color: rgba(34, 87, 191, 1);
+    &--title {
+      text-align: center;
+      @include textProperty(white, 64px);
+    }
+    &--subtitle {
+      text-align: center;
+      @include textProperty(white, 32px);
+      font-weight: 100;
+    }
+    &--button {
+      margin-top: 10px;
+      border-radius: 20px;
+      width: 200px;
+      height: 40px;
+      @include textProperty(white, 24px);
+      background-color: rgba(34, 87, 191, 1);
+      border: 1px solid white;
+      transition: 0.2s;
+      padding: 1rem;
+      text-align: center;
+      text-decoration: none;
+      &:hover {
+        box-shadow: 3px 1px 10px 1px rgb(39, 39, 39) inset;
+      }
+    }
+  }
+  &__rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+    &--title {
+      @include textProperty(black, 64px);
+    }
+    &--subtitle {
+      @include textProperty(black, 12px);
+    }
+    &--nameInp {
+      padding-left: 1rem;
+      width: 450px;
+      height: 70px;
+      background-color: rgba(240, 238, 241, 1);
+      @include textProperty(black, 20px);
+      border-radius: 20px;
+      font-weight: 100;
+      border: none;
+    }
+    &--emailInp {
+      @extend .registration__rightSide--nameInp;
+    }
+    &--passwordInp {
+      @extend .registration__rightSide--nameInp;
+    }
+    &--submit {
+      margin-top: 10px;
+      border-radius: 20px;
+      width: 200px;
+      height: 40px;
+      @include textProperty(white, 24px);
+      background-color: rgba(34, 87, 191, 1);
+      border: 1px solid white;
+      transition: 0.2s;
+      padding: 1rem;
+      text-align: center;
+      text-decoration: none;
+      &:hover {
+        box-shadow: 3px 1px 10px 1px rgb(39, 39, 39) inset;
+      }
+    }
+  }
+}
