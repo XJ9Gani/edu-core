@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../styles/AllCourses.scss";
+import MyCourses from "./MyCourses";
 const AllCourses = () => {
   const [courses, setCourses] = useState([]);
   useEffect(() => {
@@ -10,6 +11,12 @@ const AllCourses = () => {
     }
     fetchData();
   }, []);
+  const [myCourses, setMyCourses] = useState([]);
+  const addToMyCourses = (id) => {
+    const selectedCourse = courses.find((el) => el.id === id);
+    setMyCourses((prevCourses) => [...prevCourses, selectedCourse]);
+    localStorage.setItem("myCourses", JSON.stringify(myCourses)); // Update state
+  };
   if (!courses.length) {
     return <>Loading</>;
   }
@@ -22,6 +29,13 @@ const AllCourses = () => {
             <h1 className="title">{el.title}</h1>
             <div className="description">{el.description}</div>
             <div className="level">{el.level}</div>
+            <button
+              onClick={() => addToMyCourses(el.id)}
+              disabled={myCourses.some((course) => course.id === el.id)}
+              className="addButton"
+            >
+              Add
+            </button>
           </li>
         ))}
       </ul>

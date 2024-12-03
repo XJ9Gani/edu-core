@@ -1,0 +1,142 @@
+@mixin textProperty($color, $size) {
+  font-size: $size;
+  color: $color;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.myProfile {
+  background-color: rgb(240, 240, 240);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  .upSide {
+    width: 80vw;
+    height: 50vh;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    &__leftSection {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      padding-top: 1.5rem;
+      gap: 40px;
+      &__welcome {
+        background-color: rgba(34, 87, 191, 1);
+        height: 30%;
+        border-radius: 30px;
+        box-shadow: 0 2px 5px 1px black;
+        &--name {
+          text-align: center;
+          @include textProperty(white, 30px);
+          margin-top: 30px;
+        }
+      }
+      &__info {
+        background-color: white;
+        border-radius: 30px;
+        height: 70%;
+        box-shadow: 0 2px 5px 1px black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--img {
+          border: 1px solid black;
+          border-radius: 50%;
+          height: 170px;
+          width: 170px;
+          object-fit: cover;
+        }
+        .text {
+          width: 60%;
+          height: 80%;
+
+          &__name {
+            text-align: center;
+            @include textProperty(rgba(16, 32, 63, 1), 30px);
+            margin-top: 30px;
+          }
+          &__burth {
+            text-align: center;
+            @include textProperty(rgba(16, 32, 63, 1), 10px);
+            margin-top: 30px;
+          }
+          &__email {
+            text-align: center;
+            @include textProperty(rgba(16, 32, 63, 1), 10px);
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+    &__rightSection {
+      margin-top: 25px;
+      width: 50%;
+      background-color: white;
+      height: 365px;
+      border-radius: 30px;
+      box-shadow: 0 2px 5px 1px black;
+      &--title {
+        @include textProperty(black, 32px);
+        text-align: center;
+      }
+      &--quiz {
+        display: block;
+        width: 200px;
+        height: 40px;
+        margin: auto;
+        margin-top: 50px;
+        text-align: center;
+        border-radius: 20px;
+        background-color: rgba(34, 87, 191, 1);
+        padding-top: 10px;
+        @include textProperty(white, 20px);
+        text-decoration: none;
+      }
+    }
+  }
+  .downSide {
+    border-radius: 30px;
+    width: 80vw;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 5px 5px 1px;
+    height: 50vh;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .list {
+      width: 80vw;
+      height: 40vh;
+      overflow: hidden;
+      overflow-y: auto;
+      &__title {
+        text-align: center;
+        @include textProperty(rgba(16, 32, 63, 1), 32px);
+        margin-top: 30px;
+      }
+      &__item {
+        padding: 1rem;
+        list-style: none;
+        width: 50vw;
+        height: 3vh;
+        box-shadow: 0 0 5px 1px black;
+        border-radius: 10px;
+        background-color: rgb(240, 240, 240);
+        margin: auto;
+        margin-top: 10px;
+        &--title {
+          text-align: center;
+          @include textProperty(rgba(16, 32, 63, 1), 24px);
+        }
+      }
+    }
+  }
+}

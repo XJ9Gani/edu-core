@@ -39,7 +39,7 @@
       background-color: rgba(34, 87, 191, 1);
       border-radius: 20px;
       text-align: center;
-      padding-top: 1rem;
+
       width: 257px;
       height: 60px;
       @include textProperty(white, 32px);
@@ -86,4 +86,11 @@
       }
     }
   }
+}
+
+.mode2 {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  @include textProperty(rgb(255, 255, 255), 30px);
 }

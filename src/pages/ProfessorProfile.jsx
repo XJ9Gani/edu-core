@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../styles/MyProfile.scss";
 import { Link } from "react-router-dom";
-const MyProfile = () => {
+import "../styles/MyProfile.scss";
+const ProfessorCourses = () => {
   const [myCourses, setMyCourses] = useState([]);
   useEffect(() => {
     setMyCourses(JSON.parse(localStorage.getItem("myCourses")));
@@ -13,7 +14,7 @@ const MyProfile = () => {
         <div className="upSide__leftSection">
           <div className="upSide__leftSection__welcome">
             <h1 className="upSide__leftSection__welcome--name">
-              Welcome Back , {localStorage.getItem("name")}
+              Welcome Back , {localStorage.getItem("teacherName")}
             </h1>
           </div>
           <div className="upSide__leftSection__info">
@@ -56,4 +57,4 @@ const MyProfile = () => {
   );
 };
 
-export default MyProfile;
+export default ProfessorCourses;

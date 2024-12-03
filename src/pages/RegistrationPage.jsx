@@ -26,6 +26,11 @@ const RegistrationPage = () => {
   //   console.log(data);
   // }, []);
 
+  useEffect(() => {
+    localStorage.setItem("professorEmail", "admin");
+    localStorage.setItem("teacherName", "Professor Aruzhan");
+    localStorage.setItem("professorPassword", "password");
+  }, []);
   const setToStorageData = () => {
     if (name === "" || password === "" || email === "") {
       alert("Заполните все данные!!");
@@ -43,6 +48,9 @@ const RegistrationPage = () => {
   };
   return (
     <section className="registration">
+      <Link to="/instructor-sing-in" className="mode">
+        I am professor
+      </Link>
       <div className="registration__leftSide">
         <h1 className="registration__leftSide--title">Welcome Back!</h1>
         <span className="registration__leftSide--subtitle">

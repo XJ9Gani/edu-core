@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Header.scss";
 import { Link, NavLink } from "react-router-dom";
 import { useCallback } from "react";
-const Header = ({ userName }) => {
+const ProfessorHeader = ({ userName }) => {
   const activeLinkHandler = useCallback(
     ({ isActive }) =>
       isActive
@@ -21,13 +21,10 @@ const Header = ({ userName }) => {
   return (
     <header className="header">
       <nav className="header__navbar">
-        <NavLink to="/all-courses" style={activeLinkHandler}>
-          All Courses
+        <NavLink to="/instructor-courses" style={activeLinkHandler}>
+          Courses
         </NavLink>
-        <NavLink to="/my-courses" style={activeLinkHandler}>
-          My Courses
-        </NavLink>
-        <NavLink to="/my-profile" style={activeLinkHandler}>
+        <NavLink to="/instructor-profile" style={activeLinkHandler}>
           My Profile
         </NavLink>
         <NavLink to="/sing-in" style={activeLinkHandler}>
@@ -38,4 +35,4 @@ const Header = ({ userName }) => {
   );
 };
 
-export default Header;
+export default ProfessorHeader;

@@ -8,6 +8,13 @@
   padding: 0;
 }
 
+.mode {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  @include textProperty(white, 30px);
+}
+
 .registration {
   display: flex;
   min-height: 100vh;

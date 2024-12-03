@@ -1,0 +1,32 @@
+@mixin textProperty($color, $size) {
+  font-size: $size;
+  color: $color;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.teacherProfile {
+  height: 70vh;
+  &__info {
+    width: 80vw;
+    height: 50vh;
+    padding-top: 10px;
+    box-shadow: 0 0 5px 1px black;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 10%;
+    &--img {
+      margin: auto;
+      margin-top: 20px;
+      background-image: url("https://s3-alpha-sig.figma.com/img/7477/f82b/9c40718d318719bb01e1f48c41db88ee?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=C5EoFbabSNoIIG-p~rYaloNHX-mSP1f1x-vxldohPS~wj0lZRv57TGyn~KFj1-aBcBdmFIsO39ag2Sm~trKS1~vgt6QPKQM0-fxhbOp981a0XMRR2ZUBRagpqb8U8v1ThUz8Vkapi02CcZnFDMp1WUsJivAZMHFUh5bpTSm6BDbC0SPe8Bpr~EGndBsmQ9KPd3Cji8M76bi3kiy0mH7~JdmV6WV4lt3JQJzYSf-nIPA8ch~vKzuIl5I-j3tsyJr5ww2hzuQqMxSUQmyejub~cZzIjwa-VEU4TYcTCff0FRgpGRvvII-5lsRRZq8RcsjKvf3blmgwmbg3Bm0AVFAI0g__");
+      background-size: cover;
+      border-radius: 50%;
+      border: 1px solid black;
+      width: 200px;
+      height: 200px;
+    }
+  }
+}

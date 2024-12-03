@@ -8,7 +8,7 @@
   padding: 0;
 }
 
-.allCourses {
+.MyCourses {
   min-height: 100vh;
   background-color: rgb(240, 240, 240);
   &__container {
@@ -39,17 +39,17 @@
         @include textProperty(rgba(16, 32, 63, 1), 24px);
       }
       .description {
-        text-align: center;
         height: 32px;
         display: block;
         margin-top: 1px;
+        text-align: center;
         @include textProperty(rgba(16, 32, 63, 1), 15px);
       }
       .level {
-        text-align: center;
         margin-top: 40px;
         @include textProperty(rgba(77, 77, 77, 1), 13px);
         height: 32px;
+        text-align: center;
       }
       .addButton {
         background-color: rgba(34, 87, 191, 1);
@@ -61,5 +61,35 @@
         }
       }
     }
+  }
+}
+
+.form {
+  height: 10vh;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+}
+.addCourse-inp {
+  padding-top: 10px;
+  border-radius: 20px;
+  width: 300px;
+  height: 60px;
+  box-shadow: 0 0 5px 3px gray;
+  text-align: center;
+  @include textProperty(black, 30px);
+}
+.addCourse-btn {
+  border-radius: 20px;
+  width: 100px;
+  height: 60px;
+  box-shadow: 0 0 5px 3px gray;
+  text-align: center;
+  @include textProperty(rgb(255, 255, 255), 16px);
+  transition: 0.3s;
+  background-color: rgb(81, 116, 187);
+  &:hover {
+    background-color: white;
+    color: rgb(81, 116, 187);
   }
 }

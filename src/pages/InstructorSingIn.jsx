@@ -1,14 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "../styles/SingIn.scss";
-const SingInPage = () => {
+const InstructorSingIn = () => {
   const navigate = useNavigate();
   const [emailFromStore, setEmailFromStore] = useState(
-    localStorage.getItem("email")
+    localStorage.getItem("professorEmail")
   );
   const [passwordFromStore, setPasswordFromStore] = useState(
-    localStorage.getItem("password")
+    localStorage.getItem("professorPassword")
   );
 
   const [inputEmail, setInputEmail] = useState("");
@@ -25,14 +26,18 @@ const SingInPage = () => {
     ) {
       alert("Не правильный логин или пороль!!");
     } else {
+      alert("Login successful!");
       setInputEmail("");
       setIputPassword("");
-      localStorage.setItem("current-user", "student");
-      navigate("/my-profile");
+      navigate("/instructor-profile");
+      localStorage.setItem("current-user", "teacher");
     }
   };
   return (
     <section className="singIn">
+      <Link to="/sing-in" className="mode2">
+        I am Student
+      </Link>
       <div className="singIn__leftSide">
         <h1 className="singIn__leftSide--title">Sign In</h1>
         <input
@@ -53,16 +58,13 @@ const SingInPage = () => {
         </button>
       </div>
       <div className="singIn__rightSide">
-        <h1 className="singIn__rightSide--title">Hello, Friend!</h1>
+        <h1 className="singIn__rightSide--title">Good afternoon, Professor!</h1>
         <span className="singIn__rightSide--subtitle">
           Register with your personal details to use all of the features
         </span>
-        <Link className="singIn__rightSide--button" to="/">
-          Registration
-        </Link>
       </div>
     </section>
   );
 };
 
-export default SingInPage;
+export default InstructorSingIn;
